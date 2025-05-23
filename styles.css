@@ -1,0 +1,303 @@
+/* =========================
+    1. Importación de fuentes desde Google Fonts
+    ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+/* =========================
+    2. Ajustes globales y tipografía base
+    ========================= */
+html, body {
+     overflow-x: hidden;
+     text-align: justify;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     scroll-behavior: smooth;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     background-color: #ffffff;
+     color: #333333;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    3. Listas sin viñetas y tipografía consistente
+    ========================= */
+ul {
+     list-style-type: none;
+     padding-left: 0;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    4. Estilos para mostrar código fuente
+    ========================= */
+code, pre {
+     font-family: 'Source Code Pro', monospace;
+}
+
+/* =========================
+    5. Encabezado principal del sitio
+    ========================= */
+header {
+     background-color: #ffffff;
+     border-bottom: 1px solid #eaeaea;
+     padding: 20px 0;
+     text-align: center;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+header h1 {
+     margin: 0;
+     font-size: 2rem;
+     color: #000000;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    6. Barra de navegación fija y estilos de menú
+    ========================= */
+nav {
+     position: fixed;
+     z-index: 1000;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     background-color: #f8f8f8;
+     border-top: 1px solid #eaeaea;
+     border-bottom: 1px solid #eaeaea;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+.navbar-nav {
+     justify-content: center;
+     width: 100%;
+}
+
+.navbar-nav .nav-link {
+     padding: 0.5rem 1rem;
+}
+
+nav ul {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+}
+
+nav ul li {
+     margin: 0 15px;
+}
+
+nav ul li a {
+     text-decoration: none;
+     color: #333333;
+     font-weight: 600;
+     transition: color 0.3s ease;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+     color: #007bff;
+}
+
+/* =========================
+    7. Ajuste de scroll para avisos o banners
+    ========================= */
+#collapseCookies {
+     scroll-margin-top: 80px; /* Ajusta según la altura de la barra de navegación */
+}
+
+/* =========================
+    8. Secciones principales del contenido
+    ========================= */
+section {
+     padding: 40px 20px;
+     max-width: 1200px;
+     margin: 0 auto;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+h2 {
+     font-size: 1.5rem;
+     margin-bottom: 20px;
+     color: #000000;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    9. Clases específicas para presentación y contenido
+    ========================= */
+.Presentación {
+     margin-top: -650px;
+     text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+.Text-Presentación {
+     justify-items: center;
+     text-align-last: center;
+     text-align: center;
+     text-justify: inter-word;
+}
+
+.Contenido {
+     margin-top: -470px;
+     margin-bottom: 300px;
+}
+
+.Vídeo {
+     margin-top: -500px;
+}
+
+/* =========================
+    10. Tarjetas de información (cards)
+    ========================= */
+.card {
+     background-color: #ffffff;
+     border: 1px solid #eaeaea;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+     overflow: hidden;
+     transition: transform 0.3s ease;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+.card:hover {
+     transform: translateY(-5px);
+}
+
+.card img {
+     width: 100%;
+     height: auto;
+     display: block;
+}
+
+.card-content {
+     padding: 20px;
+}
+
+.card-content h3 {
+     margin-top: 0;
+     font-size: 1.2rem;
+     color: #000000;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+.card-content p {
+     font-size: 1rem;
+     color: #666666;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    11. Pie de página del sitio
+    ========================= */
+footer {
+     background-color: #f8f8f8;
+     border-top: 1px solid #eaeaea;
+     text-align: center;
+     padding: 20px 0;
+     font-size: 0.9rem;
+     color: #999999;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     margin-left: -72px;
+}
+
+footer h2 {
+     margin-bottom: 12px;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    12. Sección de marcas destacadas
+    ========================= */
+.brands-section h2 {
+     margin-left: 30px;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+.brands-section ul li {
+     margin-bottom: 10px;
+}
+
+/* =========================
+    13. Espaciado y estilos para el contenido principal y avisos legales
+    ========================= */
+main {
+     margin-top: 100px;
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+.avisolegal {
+     background: #fff;
+     border-radius: 16px;
+     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    14. Detalles visuales para main y avisos legales
+    ========================= */
+main .card-header {
+     background: #f8f9fa;
+     border-bottom: 1px solid #e1e1e1;
+}
+
+main .card {
+     border-radius: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #e1e1e1;
+}
+
+main .btn-link {
+     color: #2980b9;
+     text-decoration: none;
+     font-size: 1.15rem;
+     transition: color 0.2s;
+}
+
+main .btn-link:hover, main .btn-link:focus {
+     color: #1a5276;
+     text-decoration: underline;
+}
+
+main ul, main ol {
+     padding-left: 1.5rem;
+}
+
+main h2, main h3 {
+     color: #2980b9;
+     margin-top: 1.5rem;
+     margin-bottom: 1rem;
+}
+
+main .legal-content::-webkit-scrollbar {
+     width: 8px;
+     background: #f1f1f1;
+}
+
+main .legal-content::-webkit-scrollbar-thumb {
+     background: #d1d1d1;
+     border-radius: 4px;
+}
+
+/* =========================
+    15. Adaptación responsive para móviles y tablets
+    ========================= */
+@media (max-width: 768px) {
+     nav ul {
+          flex-direction: column;
+     }
+
+     nav ul li {
+          margin: 10px 0;
+     }
+
+     section {
+          padding: 20px 10px;
+     }
+}

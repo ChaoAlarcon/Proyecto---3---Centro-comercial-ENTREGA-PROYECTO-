@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurantes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Imágenes/icono.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap 5.3.5 CSS and JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+</head>
+<body>
+  <header>
+   
+   <!-- Navbar responsivo -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid justify-content-center">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
+      </a>
+      <!-- Botón hamburguesa para móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Contenido del navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="tiendas.html">Tiendas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ocio.html">Ocio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cine.html">Cine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plano-centro.html">Plano del Centro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visitanos.html">Visítanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="avisolegal.html">Aviso Legal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <main>
+    <section class="container py-5">
+      <h1 class="mb-5 text-center fw-bold text-primary">
+        <i class="bi bi-egg-fried me-2"></i>Restaurantes
+      </h1>
+      <div class="row g-4 justify-content-center">
+
+        <!-- Modal 100 Montaditos Tapas -->
+        <div class="modal fade" id="modal100Montaditos" tabindex="-1" aria-labelledby="modal100MontaditosLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modal100MontaditosLabel">100 Montaditos Tapas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/100montaditos.jpg" class="img-fluid rounded shadow" alt="Restaurante 100 Montaditos Tapas">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Disfruta de una gran variedad de bocadillos, tapas y cerveza en un ambiente informal y divertido. Ideal para compartir con amigos o familia.</p>
+                    <a href="https://spain.100montaditos.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://spain.100montaditos.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 100 Montaditos Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">100 Montaditos Tapas</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/100montaditos.png" class="card-img-top p-2 rounded-4" alt="100 Montaditos Tapas" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modal100Montaditos">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Alice Pizza -->
+        <div class="modal fade" id="modalAlicePizza" tabindex="-1" aria-labelledby="modalAlicePizzaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalAlicePizzaLabel">Alice Pizza</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/alicepizza.jpeg" class="img-fluid rounded shadow" alt="Restaurante Alice Pizza">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Auténtica pizza italiana al estilo romano, elaborada con ingredientes frescos y masa artesanal. ¡El sabor de Italia en cada porción!</p>
+                    <a href="https://www.alicepizza.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.alicepizza.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Alice Pizza Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">Alice Pizza</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/alice.png" class="card-img-top p-2 rounded-4" alt="Alice Pizza" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAlicePizza">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Bombon Boss -->
+        <div class="modal fade" id="modalBombonBoss" tabindex="-1" aria-labelledby="modalBombonBossLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalBombonBossLabel">BOMBON BOSS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/bombonboss.jpeg" class="img-fluid rounded shadow" alt="Restaurante BOMBON BOSS">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Descubre deliciosos postres, cafés y bombones artesanales en un espacio moderno y acogedor. El lugar perfecto para una pausa dulce.</p>
+                    <a href="https://www.bombonboss.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.bombonboss.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bombon Boss Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">BOMBON BOSS</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/bombonboss.png" class="card-img-top p-2 rounded-4" alt="BOMBON BOSS" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalBombonBoss">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Brasayleña -->
+        <div class="modal fade" id="modalBrasaylena" tabindex="-1" aria-labelledby="modalBrasaylenaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalBrasaylenaLabel">Brasayleña</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/brasayleña.jpeg" class="img-fluid rounded shadow" alt="Restaurante Brasayleña">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Vive la experiencia del auténtico rodizio brasileño con carnes a la brasa servidas en mesa y un ambiente único.</p>
+                    <a href="https://www.brasaylena.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.brasaylena.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Brasayleña Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">Brasayleña</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/brasayleña.png" class="card-img-top p-2 rounded-4" alt="Brasayleña" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalBrasaylena">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal CASA CARMEN -->
+        <div class="modal fade" id="modalCasaCarmen" tabindex="-1" aria-labelledby="modalCasaCarmenLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalCasaCarmenLabel">CASA CARMEN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/casacarmen.jpeg" class="img-fluid rounded shadow" alt="Restaurante CASA CARMEN">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Cocina mediterránea con un toque moderno y platos elaborados con productos frescos. Un espacio elegante para disfrutar en buena compañía.</p>
+                    <a href="https://www.casacarmenrestaurant.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.casacarmenrestaurant.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CASA CARMEN Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">CASA CARMEN</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/casacarmen.png" class="card-img-top p-2 rounded-4" alt="CASA CARMEN" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalCasaCarmen">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Deewey -->
+        <div class="modal fade" id="modalDeewey" tabindex="-1" aria-labelledby="modalDeeweyLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalDeeweyLabel">Deewey</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/deewey.jpg" class="img-fluid rounded shadow" alt="Restaurante Deewey">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Comida rápida saludable y deliciosa, con opciones frescas y equilibradas para todos los gustos. Perfecto para quienes buscan cuidarse sin renunciar al sabor.</p>
+                    <a href="https://www.deewey.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.deewey.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Deewey Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">Deewey</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/deewey.png" class="card-img-top p-2 rounded-4" alt="Deewey" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalDeewey">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Dunkin Coffee -->
+        <div class="modal fade" id="modalDunkin" tabindex="-1" aria-labelledby="modalDunkinLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalDunkinLabel">Dunkin Coffee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/dunkincoffee.jpeg" class="img-fluid rounded shadow" alt="Restaurante Dunkin Coffee">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Donuts, café y más para disfrutar en cualquier momento. Un clásico para los amantes del dulce y el café.</p>
+                    <a href="https://www.dunkin.es" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.dunkin.es" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dunkin Coffee Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">Dunkin Coffee</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/dunkin.png" class="card-img-top p-2 rounded-4" alt="Dunkin Coffee" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalDunkin">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Espresso Americano -->
+        <div class="modal fade" id="modalEspressoAmericano" tabindex="-1" aria-labelledby="modalEspressoAmericanoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalEspressoAmericanoLabel">Espresso Americano</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Restaurantes/Local/espressoamericano.jpg" class="img-fluid rounded shadow" alt="Restaurante Espresso Americano">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Café de alta calidad y ambiente acogedor. Un rincón perfecto para relajarte y disfrutar de una buena taza de café.</p>
+                    <a href="https://www.espressoamericano.com" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <a href="https://www.espressoamericano.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Espresso Americano Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">Espresso Americano</h2>
+            </div>
+            <img src="Imágenes/Restaurantes/espressoamericano.png" class="card-img-top p-2 rounded-4" alt="Espresso Americano" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalEspressoAmericano">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+ <!-- Pie de página con toda la información útil y enlaces -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-start">
+        <!-- Aquí tienes nuestra dirección por si quieres visitarnos -->
+        <div class="address-section col-md-4 mb-4">
+          <address>
+            <h2 class="h5 text-uppercase text-info mb-3">Dónde estamos</h2>
+            <strong>Plaza Rio2</strong>
+            <p class="mb-1">Centro Comercial Plaza Río 2<br>
+              Avenida del Manzanares 210<br>
+              28026 Madrid<br>
+              España</p>
+            <a href="visitanos.html" class="text-decoration-underline text-info">Cómo llegar</a>
+          </address>
+        </div>
+        <!-- Enlaces útiles para que encuentres todo lo que buscas -->
+        <div class="info-section col-md-4 mb-4">
+          <h2 class="h5 text-uppercase text-info mb-3">Información</h2>
+          <ul class="list-unstyled">
+            <li><a href="tiendas.html" class="text-light text-decoration-none">Todas las tiendas</a></li>
+            <li><a href="/prensa" class="text-light text-decoration-none">Prensa</a></li>
+            <li><a href="ocio.html" class="text-light text-decoration-none">Servicios</a></li>
+            <li><a href="/plano-del-sitio-web" class="text-light text-decoration-none">Plano del sitio web</a></li>
+            <li><a href="avisolegal.html" class="text-light text-decoration-none">Aviso Legal</a></li>
+            <li><a href="avisolegal.html#collapseCookies" class="text-light text-decoration-none">Gestión de cookies</a></li>
+            <li><a href="contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+            <li><a href="/trabajar-en-plaza-rio" class="text-light text-decoration-none">Trabajar en Plaza Río 2</a></li>
+            <li><a href="" class="text-light text-decoration-none">Portal empleado RIO</a></li>
+            <li><a href="ocio.html#miradorrio2" class="text-light text-decoration-none">Mirador Rio 2</a></li>
+          </ul>
+        </div>
+        <!-- Listado de marcas y categorías para que encuentres tu tienda favorita -->
+        <div class="brands-section col-md-4 mb-4">
+          <h2 class="h5 text-uppercase text-info mb-3">Todas las marcas</h2>
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled me-4">
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Mujer</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Hombre</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Niños</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Intima</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Deportiva</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Zapateria, bolsos, complementos</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Belleza, salud</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Hogar, decoración</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Cultura, ocio, tecnología</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Servicios</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Hipermercado</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Universo gourmet</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Joyería, relojería</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Alimentación</a></li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Aquí puedes seguirnos en redes sociales o suscribirte a nuestro boletín -->
+    <div class="container-fluid   pt-4 mt-4">
+      <div class="row">
+        <!-- Síguenos en tus redes favoritas para no perderte nada -->
+        <div class="col-md-6 mb-3">
+          <section>
+            <h2 class="h5 text-uppercase text-info mb-3">Síguenos</h2>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item mx-1">
+                <a href="https://www.facebook.com/PlazaRio2/" target="_blank" aria-label="Facebook" class="text-light">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://www.instagram.com/plazario_2/" target="_blank" aria-label="Instagram" class="text-light">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://twitter.com/plazario_2" target="_blank" aria-label="Twitter" class="text-light">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://www.tiktok.com/@plazario2" target="_blank" aria-label="TikTok" class="text-light">
+                  <i class="fab fa-tiktok fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- Suscríbete a nuestro boletín y recibe todas las novedades -->
+        <div class="col-md-6">
+          <section>
+            <h2 class="h5 text-uppercase text-info mb-3">Suscríbete a nuestro boletín</h2>
+            <form action="/submit" method="post" class="row g-2 align-items-center">
+              <div class="col-8">
+                <label for="newsletter-email" class="visually-hidden">Tu email</label>
+                <input type="email" name="email" id="newsletter-email" class="form-control" placeholder="Tu email" required>
+              </div>
+              <div class="col-4">
+                <button type="submit" class="btn btn-info w-100 text-dark fw-bold">Suscribirse</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-center text-secondary small">
+            &copy; Plaza Río 2 Todos los derechos reservados. 2025.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

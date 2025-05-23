@@ -1,0 +1,107 @@
+[
+    {
+        "titulo": "Hurry Up Tomorrow",
+        "fecha_estreno": "2025-05-14",
+        "genero": "Ciencia ficción/Drama",
+        "descripcion": "Una odisea cinematográfica surrealista protagonizada por The Weeknd, Jenna Ortega y Barry Keoghan. Una experiencia única que combina música y narrativa visual.",
+        "imagen": "Películas/hurryuptomorrow.jpeg"
+    },
+    {
+        "titulo": "Lilo & Stitch",
+        "fecha_estreno": "2025-05-22",
+        "genero": "Aventura/Familia",
+        "descripcion": "La reimaginación en acción real de Disney sobre un alienígena azul y su familia en Hawái. Perfecta para disfrutar en RealD 3D.",
+        "imagen": "Películas/lilo&stitch.jpeg"
+    },
+    {
+        "titulo": "Final Destination: Bloodlines",
+        "fecha_estreno": "2025-05-14",
+        "genero": "Terror/Suspenso",
+        "descripcion": "Una nueva entrega de la icónica saga de terror, donde el destino persigue a sus protagonistas en un evento especial en IMAX.",
+        "imagen": "Películas/finaldestination.jpeg"
+    },
+    {
+        "titulo": "ATEEZ WORLD TOUR [TOWARDS THE LIGHT : WILL TO POWER] IN CINEMAS",
+        "fecha_estreno": "2025-05-14",
+        "genero": "Concierto/Musical",
+        "descripcion": "El espectáculo en vivo de ATEEZ, capturado para la gran pantalla. Una experiencia inmersiva para los fans de K-pop.",
+        "imagen": "Películas/ateez.jpeg"
+    },
+    {
+        "titulo": "The Penguin Lessons",
+        "fecha_estreno": "2025-03-28",
+        "genero": "Drama/Comedia",
+        "descripcion": "Una conmovedora historia basada en hechos reales sobre un profesor y su conexión con un pingüino. Ideal para toda la familia.",
+        "imagen": "Películas/thepenguinlessons.jpeg"
+    },
+    {
+        "titulo": "Captain America: Brave New World",
+        "fecha_estreno": "2025-02-14",
+        "genero": "Acción/Aventura",
+        "descripcion": "La nueva entrega del Universo Cinematográfico de Marvel, con Anthony Mackie como el nuevo Capitán América enfrentándose a un complot global.",
+        "imagen": "Películas/captainamerica_bravenewworld.jpeg"
+    },
+    {
+        "titulo": "Snow White",
+        "fecha_estreno": "2025-03-21",
+        "genero": "Fantasía/Musical",
+        "descripcion": "La adaptación en acción real del clásico de Disney, protagonizada por Rachel Zegler como Blancanieves y Gal Gadot como la Reina Malvada.",
+        "imagen": "Películas/snowwhite.jpeg"
+    },
+    {
+        "titulo": "Mickey 17",
+        "fecha_estreno": "2025-03-07",
+        "genero": "Ciencia ficción/Comedia",
+        "descripcion": "Una aventura espacial dirigida por Bong Joon-ho, con Robert Pattinson como un colonizador espacial que muere y renace repetidamente.",
+        "imagen": "Películas/mickey17.jpeg"
+    },
+    {
+        "titulo": "Paddington in Peru",
+        "fecha_estreno": "2025-01-17",
+        "genero": "Aventura/Comedia",
+        "descripcion": "Paddington regresa en una nueva aventura que lo lleva a Perú en busca de un tesoro familiar, con un elenco estelar y momentos llenos de humor.",
+        "imagen": "Películas/paddingtoninperu.jpeg"
+    },
+    {
+        "titulo": "Thunderbolts*",
+        "fecha_estreno": "2025-05-02",
+        "genero": "Acción/Aventura",
+        "descripcion": "Un equipo de antihéroes del Universo Cinematográfico de Marvel, liderado por Yelena Belova, se une para una misión explosiva.",
+        "imagen": "Películas/thunderbolts.jpeg"
+    },
+    {
+        "titulo": "The Fantastic Four: First Steps",
+        "fecha_estreno": "2025-07-25",
+        "genero": "Acción/Ciencia ficción",
+        "descripcion": "El reinicio del equipo de superhéroes de Marvel, ambientado en los años 60, con un elenco estelar que incluye a Pedro Pascal y Vanessa Kirby.",
+        "imagen": "Películas/fantasticfour.jpeg"
+    },
+    {
+        "titulo": "The Gorge",
+        "fecha_estreno": "2025-02-14",
+        "genero": "Ciencia ficción/Thriller",
+        "descripcion": "Un thriller de ciencia ficción protagonizado por Anya Taylor-Joy y Miles Teller, centrado en una misión secreta en un entorno extraterrestre.",
+        "imagen": "Películas/thegorge.jpeg"
+    },
+    {
+        "titulo": "A Big Bold Beautiful Journey",
+        "fecha_estreno": "2025-05-09",
+        "genero": "Romance/Drama",
+        "descripcion": "Una historia romántica protagonizada por Margot Robbie y Colin Farrell, sobre dos extraños que se encuentran en un viaje transformador.",
+        "imagen": "Películas/abigboldbeautifuljourney.jpeg"
+    },
+    {
+        "titulo": "In the Grey",
+        "fecha_estreno": "2025-01-17",
+        "genero": "Acción/Thriller",
+        "descripcion": "Un thriller de acción con Henry Cavill y Jake Gyllenhaal, donde un grupo de mercenarios enfrenta una conspiración internacional.",
+        "imagen": "Películas/inthegrey.jpeg"
+    },
+    {
+        "titulo": "One Piece: The Great Treasure Hunt",
+        "fecha_estreno": "2025-06-13",
+        "genero": "Aventura/Animación",
+        "descripcion": "Una nueva película animada basada en el popular manga y anime, siguiendo a Luffy y su tripulación en busca de un tesoro legendario.",
+        "imagen": "Películas/onepiece.jpeg"
+    }
+]
