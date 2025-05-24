@@ -1,16 +1,15 @@
 /* =========================
-    1. Importación de fuentes desde Google Fonts
-    ========================= */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
+     1. Importación de fuentes desde Google Fonts
+     ========================= */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* =========================
-    2. Ajustes globales y tipografía base
-    ========================= */
+      2. Ajustes globales y tipografía base
+      ========================= */
 html, body {
      overflow-x: hidden;
      text-align: justify;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
      scroll-behavior: smooth;
 }
 
@@ -19,46 +18,59 @@ body {
      padding: 0;
      background-color: #ffffff;
      color: #333333;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* =========================
-    3. Listas sin viñetas y tipografía consistente
-    ========================= */
 ul {
      list-style-type: none;
      padding-left: 0;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
-/* =========================
-    4. Estilos para mostrar código fuente
-    ========================= */
 code, pre {
      font-family: 'Source Code Pro', monospace;
 }
 
 /* =========================
-    5. Encabezado principal del sitio
-    ========================= */
+      3. Tipografía por elementos
+      ========================= */
+h1, .título {
+     font-family: 'Playfair Display', serif!important;
+}
+
+h2, main h2, main h3 {
+     font-family: 'Jost', Arial, sans-serif;
+}
+
+h2 {
+     font-size: 1.5rem;
+     margin-bottom: 20px;
+     color: #000000;
+}
+
+main h2, main h3 {
+     color: #2980b9;
+     margin-top: 1.5rem;
+     margin-bottom: 1rem;
+}
+
+/* =========================
+      4. Header y navegación
+      ========================= */
 header {
      background-color: #ffffff;
      border-bottom: 1px solid #eaeaea;
      padding: 20px 0;
      text-align: center;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'Playfair Display', serif;
 }
 
 header h1 {
      margin: 0;
      font-size: 2rem;
      color: #000000;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
 }
 
-/* =========================
-    6. Barra de navegación fija y estilos de menú
-    ========================= */
 nav {
      position: fixed;
      z-index: 1000;
@@ -69,7 +81,7 @@ nav {
      background-color: #f8f8f8;
      border-top: 1px solid #eaeaea;
      border-bottom: 1px solid #eaeaea;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
 .navbar-nav {
@@ -98,7 +110,7 @@ nav ul li a {
      color: #333333;
      font-weight: 600;
      transition: color 0.3s ease;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 nav ul li a:hover {
@@ -106,35 +118,24 @@ nav ul li a:hover {
 }
 
 /* =========================
-    7. Ajuste de scroll para avisos o banners
-    ========================= */
-#collapseCookies {
-     scroll-margin-top: 80px; /* Ajusta según la altura de la barra de navegación */
+      5. Main y secciones
+      ========================= */
+main {
+     margin-top: 100px;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* =========================
-    8. Secciones principales del contenido
-    ========================= */
 section {
      padding: 40px 20px;
      max-width: 1200px;
      margin: 0 auto;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
-h2 {
-     font-size: 1.5rem;
-     margin-bottom: 20px;
-     color: #000000;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
-}
-
-/* =========================
-    9. Clases específicas para presentación y contenido
-    ========================= */
 .Presentación {
      margin-top: -650px;
      text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+     font-family: 'Playfair Display', serif;
 }
 
 .Text-Presentación {
@@ -142,20 +143,31 @@ h2 {
      text-align-last: center;
      text-align: center;
      text-justify: inter-word;
+     font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.texto-descripción{
+     margin-top: -50px;
+     text-align: center;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 .Contenido {
-     margin-top: -470px;
-     margin-bottom: 300px;
+     margin-top: -435px;
+     margin-bottom: 170px;
+     font-family: 'Jost', Arial, sans-serif;
 }
+
+
 
 .Vídeo {
      margin-top: -500px;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
 /* =========================
-    10. Tarjetas de información (cards)
-    ========================= */
+      6. Cards y contenido
+      ========================= */
 .card {
      background-color: #ffffff;
      border: 1px solid #eaeaea;
@@ -163,7 +175,7 @@ h2 {
      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
      overflow: hidden;
      transition: transform 0.3s ease;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 .card:hover {
@@ -178,24 +190,25 @@ h2 {
 
 .card-content {
      padding: 20px;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 .card-content h3 {
      margin-top: 0;
      font-size: 1.2rem;
      color: #000000;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
 .card-content p {
      font-size: 1rem;
      color: #666666;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 /* =========================
-    11. Pie de página del sitio
-    ========================= */
+      7. Footer y marcas
+      ========================= */
 footer {
      background-color: #f8f8f8;
      border-top: 1px solid #eaeaea;
@@ -203,54 +216,46 @@ footer {
      padding: 20px 0;
      font-size: 0.9rem;
      color: #999999;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
      margin-left: -72px;
 }
 
 footer h2 {
      margin-bottom: 12px;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'Playfair Display', serif;
 }
 
-/* =========================
-    12. Sección de marcas destacadas
-    ========================= */
 .brands-section h2 {
      margin-left: 30px;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'Playfair Display', serif;
 }
 
 .brands-section ul li {
      margin-bottom: 10px;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
 /* =========================
-    13. Espaciado y estilos para el contenido principal y avisos legales
-    ========================= */
-main {
-     margin-top: 100px;
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
-}
-
+      8. Aviso legal y contenido legal
+      ========================= */
 .avisolegal {
      background: #fff;
      border-radius: 16px;
      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* =========================
-    14. Detalles visuales para main y avisos legales
-    ========================= */
 main .card-header {
      background: #f8f9fa;
      border-bottom: 1px solid #e1e1e1;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
 main .card {
      border-radius: 10px;
      margin-bottom: 10px;
      border: 1px solid #e1e1e1;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 main .btn-link {
@@ -258,6 +263,7 @@ main .btn-link {
      text-decoration: none;
      font-size: 1.15rem;
      transition: color 0.2s;
+     font-family: 'Jost', Arial, sans-serif;
 }
 
 main .btn-link:hover, main .btn-link:focus {
@@ -267,12 +273,7 @@ main .btn-link:hover, main .btn-link:focus {
 
 main ul, main ol {
      padding-left: 1.5rem;
-}
-
-main h2, main h3 {
-     color: #2980b9;
-     margin-top: 1.5rem;
-     margin-bottom: 1rem;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 main .legal-content::-webkit-scrollbar {
@@ -286,8 +287,15 @@ main .legal-content::-webkit-scrollbar-thumb {
 }
 
 /* =========================
-    15. Adaptación responsive para móviles y tablets
-    ========================= */
+      9. Otros
+      ========================= */
+#collapseCookies {
+     scroll-margin-top: 80px;
+}
+
+/* =========================
+      10. Media Queries
+      ========================= */
 @media (max-width: 768px) {
      nav ul {
           flex-direction: column;

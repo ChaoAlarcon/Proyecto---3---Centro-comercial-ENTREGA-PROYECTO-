@@ -68,38 +68,44 @@
     <!-- Presentación y bienvenida -->
     <section class="presentation-section py-5 text-center">
       <div class="Presentación container">
-        <h2 class="display-4 mb-3 fw-bold text-primary">Bienvenido a Plaza Río 2</h2>
-        <p class="Text-Presentación lead mb-0 text-white text-center">
-          <i class="fas fa-map-marker-alt me-2"></i>
-          El centro comercial de referencia en Madrid. Descubre tiendas, restaurantes, ocio y mucho más en un entorno moderno y familiar.
-        </p>
-        <a class="btn btn-outline-primary btn-lg shadow-sm mx-2 my-1 align-items-lg-center text-center" href="#Carousel">
+        <h2 class="título display-2 mb-4 fw-bold text-primary text-white">Bienvenido a Plaza Río 2</h2>
+        <a class="btn btn-outline-light btn-lg shadow-sm mx-2 my-1 align-items-lg-center text-center fs-5 px-4 py-2" href="#Carousel" style="font-size: 1.25rem;">
           Descúbrenos<br>
-          <i class="bi bi-chevron-double-down"></i>
+          <i class="bi bi-chevron-double-down" style="font-size: 1.5rem;"></i>
         </a>
       </div>
     </section>
 
-    <!-- Botones rápidos de acceso -->
-    <section class="my-5">
-      <div class="container d-flex justify-content-center flex-wrap gap-2">
-        <button class="btn btn-outline-primary btn-lg shadow-sm mx-2 my-1" onclick="location.href='tiendas.html'">
-          <i class="fas fa-store me-2"></i>Tiendas
-        </button>
-        <button class="btn btn-outline-success btn-lg shadow-sm mx-2 my-1" onclick="location.href='restaurantes.html'">
-          <i class="fas fa-utensils me-2"></i>Restaurantes
-        </button>
-        <button class="btn btn-outline-info btn-lg shadow-sm mx-2 my-1" onclick="location.href='noticias.html'">
-          <i class="fas fa-newspaper me-2"></i>Noticias
-        </button>
-        <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" data-bs-toggle="modal" data-bs-target="#aviso1">
-          <i class="fas fa-clock me-2"></i>Horarios
-        </button>
-      </div>
-    </section>
+   
+
+  <!-- Botones rápidos de acceso -->
+  <section class="my-5">
+    <div class="container d-flex justify-content-center flex-wrap gap-3">
+    <button class="btn btn-outline-primary btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" onclick="location.href='tiendas.html'">
+      <i class="fas fa-store me-2"></i>Tiendas
+    </button>
+    <button class="btn btn-outline-success btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" onclick="location.href='restaurantes.html'">
+      <i class="fas fa-utensils me-2"></i>Restaurantes
+    </button>
+    <button class="btn btn-outline-info btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" onclick="location.href='noticias.html'">
+      <i class="fas fa-newspaper me-2"></i>Noticias
+    </button>
+    <button class="btn btn-outline-warning btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" data-bs-toggle="modal" data-bs-target="#aviso1">
+      <i class="fas fa-clock me-2"></i>Horarios
+    </button>
+    </div>
+  </section>
+
+    
 
     <!-- Información útil: horarios y cómo llegar -->
     <section class="Contenido py-4 bg-white border-top border-bottom">
+     <section class="texto-descripción">
+    <h2 class="Text-Presentación lead mb-0 text-center">
+          <i class="fas fa-map-marker-alt me-2"></i>
+          El centro comercial de referencia en Madrid. Descubre tiendas, restaurantes, ocio y mucho más en un entorno moderno y familiar.
+        </h2>
+    </section>
       <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
         <!-- Botón para ver horario de hoy -->
         <div class="mb-3 mb-md-0">
@@ -114,6 +120,8 @@
           </a>
         </div>
       </div>
+
+      
 
       <!-- Modal de horarios -->
       <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
@@ -242,14 +250,14 @@
           <h2 class="h5 text-uppercase text-info mb-3">Información</h2>
           <ul class="list-unstyled">
             <li><a href="tiendas.html" class="text-light text-decoration-none">Todas las tiendas</a></li>
-            <li><a href="/prensa" class="text-light text-decoration-none">Prensa</a></li>
+            <li><a href="noticias.html" class="text-light text-decoration-none">Prensa</a></li>
             <li><a href="ocio.html" class="text-light text-decoration-none">Servicios</a></li>
-            <li><a href="/plano-del-sitio-web" class="text-light text-decoration-none">Plano del sitio web</a></li>
+            <li><a href="plano-centro.html" class="text-light text-decoration-none">Plano del centro</a></li>
             <li><a href="avisolegal.html" class="text-light text-decoration-none">Aviso Legal</a></li>
             <li><a href="avisolegal.html#collapseCookies" class="text-light text-decoration-none">Gestión de cookies</a></li>
             <li><a href="contacto.html" class="text-light text-decoration-none">Contacto</a></li>
-            <li><a href="/trabajar-en-plaza-rio" class="text-light text-decoration-none">Trabajar en Plaza Río 2</a></li>
-            <li><a href="" class="text-light text-decoration-none">Portal empleado RIO</a></li>
+            <li><a href="portaldeempleo.html" class="text-light text-decoration-none">Trabajar en Plaza Río 2</a></li>
+            <li><a href="portaldeempleo.html" class="text-light text-decoration-none">Portal empleado RIO</a></li>
             <li><a href="ocio.html#miradorrio2" class="text-light text-decoration-none">Mirador Rio 2</a></li>
           </ul>
         </div>
@@ -315,7 +323,7 @@
         <div class="col-md-6">
           <section>
             <h2 class="h5 text-uppercase text-info mb-3">Suscríbete a nuestro boletín</h2>
-            <form action="/submit" method="post" class="row g-2 align-items-center">
+            <form  action="http://www.cursos-dise&#241;o.es/mostrar.php" method="post" class="row g-2 align-items-center">
               <div class="col-8">
                 <label for="newsletter-email" class="visually-hidden">Tu email</label>
                 <input type="email" name="email" id="newsletter-email" class="form-control" placeholder="Tu email" required>

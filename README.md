@@ -45,27 +45,21 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 ## 📝Notas
 
-#### - 6 tiendas
-#### - 6 restaurantes
-#### - 3 zonas de ocio
-
-
-
-
-
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 #### -Ajustar paleta de colores de la página
 
 
 
-#### 2- Cambiar letras y distintos tipos para títulos y textos
 
-#### 6- Cine
-#### 	6.1- Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
-#### 10- Footer: Hacer que funcionen los enlaces
-#### -Crear página de "Prensa"(noticias) y de "Portal de empelo"
+
+
+
+#### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
+
+
+
 
 
 
