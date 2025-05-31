@@ -1,51 +1,49 @@
-/* =========================
-     1. Importación de fuentes desde Google Fonts
-     ========================= */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* 1. Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
-/* =========================
-      2. Ajustes globales y tipografía base
-      ========================= */
+/* 2. Ajustes globales y tipografía base */
 html, body {
      overflow-x: hidden;
      text-align: justify;
      font-family: 'DM Sans', Arial, sans-serif;
      scroll-behavior: smooth;
-}
-
-body {
      margin: 0;
      padding: 0;
-     background-color: #ffffff;
-     color: #333333;
-     font-family: 'DM Sans', Arial, sans-serif;
+     background-color: #F2D9BB;
+     color: #333;
 }
 
-ul {
+ul, main ul, main ol {
      list-style-type: none;
      padding-left: 0;
      font-family: 'Jost', Arial, sans-serif;
 }
 
 code, pre {
-     font-family: 'Source Code Pro', monospace;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* =========================
-      3. Tipografía por elementos
-      ========================= */
+/* 3. Tipografía por elementos */
 h1, .título {
-     font-family: 'Playfair Display', serif!important;
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif!important;
+     text-shadow: 4px 4px 16px rgba(0,0,0,0.35);
 }
 
-h2, main h2, main h3 {
+.botón-título{
+     text-shadow: 4px 4px 16px rgba(0,0,0,0.35);
+
+}
+
+h2, h3 {
      font-family: 'Jost', Arial, sans-serif;
 }
 
 h2 {
      font-size: 1.5rem;
      margin-bottom: 20px;
-     color: #000000;
+     color: #000;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 main h2, main h3 {
@@ -54,51 +52,44 @@ main h2, main h3 {
      margin-bottom: 1rem;
 }
 
-/* =========================
-      4. Header y navegación
-      ========================= */
+/* 4. Header y navegación */
 header {
-     background-color: #ffffff;
+     background-color: #F2D9BB;
      border-bottom: 1px solid #eaeaea;
      padding: 20px 0;
      text-align: center;
-     font-family: 'Playfair Display', serif;
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
 }
 
 header h1 {
      margin: 0;
      font-size: 2rem;
-     color: #000000;
+     color: #000;
 }
 
 nav {
      position: fixed;
      z-index: 1000;
      display: flex;
-     text-align: center;
      align-items: center;
      justify-content: center;
      background-color: #f8f8f8;
      border-top: 1px solid #eaeaea;
      border-bottom: 1px solid #eaeaea;
      font-family: 'Jost', Arial, sans-serif;
-}
-
-.navbar-nav {
-     justify-content: center;
      width: 100%;
 }
 
-.navbar-nav .nav-link {
-     padding: 0.5rem 1rem;
+.logo {
+     height: 70px;
+     margin-left: 100px;
 }
 
 nav ul {
-     list-style: none;
      display: flex;
      justify-content: center;
-     text-align: center;
      align-items: center;
+     text-align: center;
 }
 
 nav ul li {
@@ -107,9 +98,9 @@ nav ul li {
 
 nav ul li a {
      text-decoration: none;
-     color: #333333;
+     color: #333;
      font-weight: 600;
-     transition: color 0.3s ease;
+     transition: color 0.3s;
      font-family: 'DM Sans', Arial, sans-serif;
 }
 
@@ -117,65 +108,98 @@ nav ul li a:hover {
      color: #007bff;
 }
 
-/* =========================
-      5. Main y secciones
-      ========================= */
+/* 5. Main y secciones */
 main {
      margin-top: 100px;
      font-family: 'DM Sans', Arial, sans-serif;
 }
 
 section {
-     padding: 40px 20px;
+     padding: 0px 10px;
      max-width: 1200px;
      margin: 0 auto;
      font-family: 'DM Sans', Arial, sans-serif;
 }
 
-.Presentación {
-     margin-top: -650px;
-     text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
-     font-family: 'Playfair Display', serif;
+.botones{
+     display: flex;
+     justify-content: center;
+     margin-top: -500px;
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+     font-weight: 400;
+     font-size: 0.9rem;
 }
 
-.Text-Presentación {
-     justify-items: center;
-     text-align-last: center;
+.Presentación {
+     margin-top: -570px;
+     margin-bottom: -800px;
+     text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
      text-align: center;
-     text-justify: inter-word;
-     font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.texto-horario{
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.Text-Presentación, .texto-descripción {
+     text-align: center;
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+  font-weight: 700;
+  
 }
 
 .texto-descripción{
-     margin-top: -50px;
-     text-align: center;
-     font-family: 'DM Sans', Arial, sans-serif;
+     margin-bottom: 70px;
+     
+}
+
+.modal-title{
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+  font-weight: 700;
+     font-size: 2.5rem;
+     
+
 }
 
 .Contenido {
-     margin-top: -435px;
-     margin-bottom: 170px;
-     font-family: 'Jost', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
-
-
 
 .Vídeo {
      margin-top: -500px;
-     font-family: 'Jost', Arial, sans-serif;
+     margin-bottom: -800px;
 }
 
-/* =========================
-      6. Cards y contenido
-      ========================= */
+.texto-plano{
+     margin-top: 100px;
+}
+
+.presentation-section{
+     margin-bottom: -150px;
+}
+
+
+
+/* 6. Cards y contenido */
 .card {
-     background-color: #ffffff;
-     border: 1px solid #eaeaea;
+     background-color: #fff;
+     border: 1px solid #7f7f7f;
      border-radius: 5px;
      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
      overflow: hidden;
-     transition: transform 0.3s ease;
+     transition: transform 0.3s;
      font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.card-title{
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+     font-size: 1.5rem;
+     color: #333;
+    
+  
+    
 }
 
 .card:hover {
@@ -196,48 +220,52 @@ section {
 .card-content h3 {
      margin-top: 0;
      font-size: 1.2rem;
-     color: #000000;
+     color: #000;
      font-family: 'Jost', Arial, sans-serif;
 }
 
 .card-content p {
      font-size: 1rem;
-     color: #666666;
+     color: #666;
      font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* =========================
-      7. Footer y marcas
-      ========================= */
+/* 7. Footer y marcas */
 footer {
      background-color: #f8f8f8;
      border-top: 1px solid #eaeaea;
      text-align: center;
      padding: 20px 0;
      font-size: 0.9rem;
-     color: #999999;
+     color: #999;
      font-family: 'DM Sans', Arial, sans-serif;
-     margin-left: -72px;
 }
 
-footer h2 {
+footer h2, .brands-section h2 {
      margin-bottom: 12px;
-     font-family: 'Playfair Display', serif;
-}
-
-.brands-section h2 {
-     margin-left: 30px;
-     font-family: 'Playfair Display', serif;
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
 }
 
 .brands-section ul li {
      margin-bottom: 10px;
-     font-family: 'Jost', Arial, sans-serif;
+   font-family: 'DM Sans', Arial, sans-serif;
 }
 
-/* =========================
-      8. Aviso legal y contenido legal
-      ========================= */
+.text-light{
+     font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.badge{
+      font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+     font-size: 1.5rem;
+     color: #333;
+    
+
+}
+
+
+
+/* 8. Aviso legal y contenido legal */
 .avisolegal {
      background: #fff;
      border-radius: 16px;
@@ -254,12 +282,12 @@ main .card-header {
 main .card {
      border-radius: 10px;
      margin-bottom: 10px;
-     border: 1px solid #e1e1e1;
+     border: 1px solid #b2b2b2;
      font-family: 'DM Sans', Arial, sans-serif;
 }
 
 main .btn-link {
-     color: #2980b9;
+     color: #4B89BF;
      text-decoration: none;
      font-size: 1.15rem;
      transition: color 0.2s;
@@ -269,11 +297,6 @@ main .btn-link {
 main .btn-link:hover, main .btn-link:focus {
      color: #1a5276;
      text-decoration: underline;
-}
-
-main ul, main ol {
-     padding-left: 1.5rem;
-     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 main .legal-content::-webkit-scrollbar {
@@ -286,26 +309,79 @@ main .legal-content::-webkit-scrollbar-thumb {
      border-radius: 4px;
 }
 
-/* =========================
-      9. Otros
-      ========================= */
+/* 9. Otros */
 #collapseCookies {
      scroll-margin-top: 80px;
 }
 
-/* =========================
-      10. Media Queries
-      ========================= */
+/* 10. Responsive Design */
+
+/* --- Tablets --- */
+@media (max-width: 1024px) {
+     main {
+          margin-top: 80px;
+     }
+
+     .logo {
+          height: 60px;
+          margin-left: 0px;
+     }
+}
+
+/* --- Tablets y móviles --- */
 @media (max-width: 768px) {
      nav ul {
           flex-direction: column;
+          gap: 10px;
      }
-
-     nav ul li {
-          margin: 10px 0;
+     .logo {
+          height: 50px;
+          align-items: center;
+          margin-left: 0;
      }
-
+     header {
+          padding: 10px 0;
+     }
+     main {
+          margin-top: 70px;
+          padding: 0 10px;
+     }
      section {
-          padding: 20px 10px;
+          padding: 0 5px;
+     }
+     .card-content {
+          padding: 12px;
+     }
+}
+
+/* --- Móviles pequeños --- */
+@media (max-width: 480px) {
+     nav {
+          flex-direction: column;
+          padding: 5px 0;
+     }
+     nav ul {
+          flex-direction: column;
+          gap: 5px;
+     }
+     .logo {
+          height: 40px;
+          margin-left: 0;
+          align-items: center;
+     }
+     header h1 {
+          font-size: 1.2rem;
+     }
+     h2 {
+          font-size: 1.1rem;
+     }
+     .card {
+          margin-bottom: 16px;
+     }
+     .card-content {
+          padding: 8px;
+     }
+     section {
+          padding: 0 2px;
      }
 }

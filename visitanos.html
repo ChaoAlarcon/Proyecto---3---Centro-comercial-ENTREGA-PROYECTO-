@@ -1,89 +1,80 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="Imágenes/icono.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso - Centro Comercial Plaza Río 2</title>
-    <link rel="stylesheet" href="styles.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 5.3.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Metadatos básicos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso - Centro Comercial Plaza Río 2</title>
+  <link rel="icon" type="image/png" href="Imágenes/icono.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scss/custom.css">
+
+  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <!-- Font Awesome 6 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Bootstrap 5.3.5 CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<header>
-    <!-- Título principal de la página -->
-    
-                
-  <!-- Navbar responsivo -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid justify-content-center">
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
-      </a>
-      <!-- Botón hamburguesa para móviles -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Contenido del navbar -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
-            <a class="nav-link" href="tiendas.html">Tiendas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="restaurantes.html">Restaurantes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ocio.html">Ocio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cine.html">Cine</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plano-centro.html">Plano del Centro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="visitanos.html">Visítanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="avisolegal.html">Aviso Legal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-</header>
 <body>
+  <!-- ===========================
+     HEADER Y NAVBAR
+  ============================ -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid justify-content-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
+        </a>
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restaurantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="ocio.html">Ocio</a></li>
+            <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
+            <li class="nav-item"><a class="nav-link" href="plano-centro.html">Plano del Centro</a></li>
+            <li class="nav-item"><a class="nav-link" href="visitanos.html">Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="avisolegal.html">Aviso Legal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===========================
+     CONTENIDO PRINCIPAL
+  ============================ -->
   <main role="main" tabindex="-1" class="container my-5">
     <section>
-      <h1 class="mb-5 text-center fw-bold text-primary"><i class="fas fa-map-marker-alt me-2"></i>Acceso</h1>
-      <h2 class="h4 mb-4 text-center"><i class="fas fa-route me-2"></i>Cómo venir a visitarnos</h2>
+      <!-- Título y subtítulo -->
+      <h1 class="mb-5 text-center fw-bold text-primary texto-plano">Acceso</h1>
+      
       <div class="row g-4">
         <!-- Columna: El centro -->
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
             <div class="card-body">
               <address class="mb-4">
-                <h3 class="h5"><i class="fas fa-store me-2"></i>Centro Comercial Plaza Río 2</h3>
+                <h3 class="h5 card-title"><i class="fas fa-store me-2"></i>Centro Comercial Plaza Río 2</h3>
                 <p><i class="fas fa-map-marker-alt me-1"></i>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
-                <p class="text-success fw-bold" ><i class="far fa-clock me-1"></i>Las tiendas estarán hoy abiertas hasta las 22:00</p>
-              <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" data-bs-toggle="modal" data-bs-target="#aviso1">
-        <i class="fas fa-clock me-2"></i>Horarios
-      </button>
+                <p class="text-success fw-bold"><i class="far fa-clock me-1"></i>Las tiendas estarán hoy abiertas hasta las 22:00</p>
+                <!-- Botón para abrir modal de horarios -->
+                <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" data-bs-toggle="modal" data-bs-target="#aviso1">
+                  <i class="fas fa-clock me-2"></i>Horarios
+                </button>
               </address>
-               <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
+              <!-- Mapa Google Maps -->
+              <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.293257929698!2d-3.710663772097049!3d40.39452381747084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264a5f32eaf9%3A0x511d4a578e2c1b5c!2sCentro+Comercial+Plaza+Rio+2!5e0!3m2!1sen!2sus!4v1504628122834" width="600" height="450" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
@@ -93,7 +84,7 @@
         <div class="col-md-4">
           <div class="card shadow-sm h-100" aria-label="Información sobre parking gratuito">
             <div class="card-body">
-              <h3 class="h5 mb-3"><i class="fas fa-parking me-2"></i>Parking gratuito</h3>
+              <h3 class="h5 mb-3 card-title"><i class="fas fa-parking me-2"></i>Parking gratuito</h3>
               <p class="lead">Todos nuestros clientes podrán disfrutar de <strong>2 horas de Parking Gratuito</strong> al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
             </div>
           </div>
@@ -102,14 +93,14 @@
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
             <div class="card-body">
-              <h3 class="h5 mb-3"><i class="fas fa-bus me-2"></i>Medios de transporte</h3>
+              <h3 class="  h5 mb-3 card-title "><i class="fas fa-bus me-2"></i>Medios de transporte</h3>
               <h4 class="h6"><i class="fas fa-map-signs me-2"></i>Dirección</h4>
               <p><i class="fas fa-map-marker-alt me-1"></i>Avenida del Manzanares 210<br>28026 Madrid</p>
-              <h4 class="h6 mt-3"><i class="fas fa-bus me-2"></i>Bus</h4>
+                <h4 class=" modal-title h6 mt-3 text-primary fw-bold"><i class="fas fa-bus me-2"></i>Bus</h4>
               <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
-              <h4 class="h6 mt-3"><i class="fas fa-subway me-2"></i>Metro</h4>
+                <h4 class=" modal-title h6 mt-3 fw-bold" style="color: #ffc107;"><i class="fas fa-subway me-2"></i>Metro</h4>
               <p>Legazpi y Usera - Línea 3 y Línea 6</p>
-              <h4 class="h6 mt-3"><i class="fas fa-train me-2"></i>RENFE</h4>
+                <h4 class=" modal-title h6 mt-3 text-danger fw-bold"><i class="fas fa-train me-2"></i>RENFE</h4>
               <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
             </div>
           </div>
@@ -117,10 +108,9 @@
       </div>
     </section>
   </main>
- 
 
   <!-- ===========================
-       PIE DE PÁGINA
+     PIE DE PÁGINA (FOOTER)
   ============================ -->
   <footer class="bg-dark text-light pt-5 pb-3 mt-5">
     <div class="container-fluid">
@@ -181,7 +171,6 @@
         </div>
       </div>
     </div>
-    
     <!-- Redes sociales y boletín -->
     <div class="container-fluid pt-4 mt-4">
       <div class="row">
@@ -237,5 +226,53 @@
       </div>
     </div>
   </footer>
+
+   <!-- Modal de horarios -->
+      <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Encabezado del modal -->
+            <div class="modal-header bg-primary text-white">
+              <h3 class="modal-title text-white" id="aviso1Label"><i class="fas fa-clock me-2"></i>Horario</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <!-- Cuerpo del modal: información de horarios -->
+            <div class="modal-body">
+              <h4 class="text-center mb-4 card-title fw-bold"><i class="fas fa-question-circle me-2"></i>¿Cuándo venir a visitarnos?</h4>
+              <section>
+                <div class="row">
+                  <!-- Horario general -->
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <h5 class=" text-center text-primary">Horario del centro</h5>
+                        <div class="d-flex justify-content-center my-3">
+                          <img src="Imágenes/reloj.svg" alt="Horario" class="img-fluid" style="max-width:60px;">
+                        </div>
+                        <ol class=" card-text list-unstyled text-center mb-0">
+                          <li class=" card-text">Lunes a Domingo: <strong>10:00 a 22:00</strong></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Festivos -->
+                  <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 bg-light">
+                      <div class="card-body">
+                        <h5 class=" text-center text-danger">
+                          <i class="fas fa-star me-2"></i>Aperturas Festivos
+                        </h5>
+                        <p class="card-text text-start mb-0">
+                          <strong>Domingos y festivos de apertura:</strong><br>
+                          Abrimos todos los domingos y festivos excepto el 25 de diciembre, 1 y 6 de enero y 1 de mayo (abierta zona de restauración).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+           
+    </section>
 </body>
 </html>

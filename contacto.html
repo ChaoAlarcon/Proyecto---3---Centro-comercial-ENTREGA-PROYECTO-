@@ -1,101 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Metadatos básicos -->
   <meta charset="UTF-8">
   <title>Contacto</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" href="Imágenes/icono.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 5.3.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <!-- Font Awesome 6 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Bootstrap 5.3.5 CSS and JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Imágenes/icono.png">
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scss/custom.css">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <!-- Encabezado con el título y el menú de navegación -->
+  <!-- =========================
+       ENCABEZADO Y NAVEGACIÓN
+  ========================== -->
   <header>
-    
-  <!-- Navbar responsivo -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid justify-content-center">
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
-      </a>
-      <!-- Botón hamburguesa para móviles -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Contenido del navbar -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
-            <a class="nav-link" href="tiendas.html">Tiendas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="restaurantes.html">Restaurantes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ocio.html">Ocio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cine.html">Cine</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plano-centro.html">Plano del Centro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="visitanos.html">Visítanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="avisolegal.html">Aviso Legal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid justify-content-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
+        </a>
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restaurantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="ocio.html">Ocio</a></li>
+            <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
+            <li class="nav-item"><a class="nav-link" href="plano-centro.html">Plano del Centro</a></li>
+            <li class="nav-item"><a class="nav-link" href="visitanos.html">Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="avisolegal.html">Aviso Legal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </header>
 
-  <!-- Contenido principal con el formulario de contacto -->
+  <!-- =========================
+       FORMULARIO DE CONTACTO
+  ========================== -->
   <main class="container my-5 pt-5 d-flex justify-content-center align-items-center" style="min-height: 70vh;">
     <section class="row justify-content-center w-100">
       <div class="col-md-8 col-lg-6">
-        <h1 class="mb-5 text-center fw-bold text-primary">
-          Contacto
-        </h1>
+        <h1 class="mb-5 text-center fw-bold text-primary">Contacto</h1>
         <form action="http://www.cursos-dise&#241;o.es/mostrar.php" method="post" class="p-4 border rounded-4 shadow bg-white" onsubmit="return validarEmails();">
           <div class="row">
-            <!-- Nombre -->
+            <!-- Campo Nombre -->
             <div class="col-md-6 mb-3">
               <label for="nombre" class="form-label fw-semibold">
                 <i class="fas fa-user me-2 text-info"></i>Nombre
               </label>
-              <input type="text " class="form-control text-start" id="nombre" name="nombre" placeholder="Nombre" required>
+              <input type="text" class="form-control text-start" id="nombre" name="nombre" placeholder="Nombre" required>
             </div>
-            <!-- Apellidos -->
+            <!-- Campo Apellidos -->
             <div class="col-md-6 mb-3">
               <label for="apellidos" class="form-label fw-semibold">
                 <i class="fas fa-user-tag me-2 text-info"></i>Apellidos
               </label>
-              <input type="text " class="form-control text-start" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+              <input type="text" class="form-control text-start" id="apellidos" name="apellidos" placeholder="Apellidos" required>
             </div>
           </div>
           <div class="row">
-            <!-- Dirección -->
+            <!-- Campo Dirección -->
             <div class="col-md-6 mb-3">
               <label for="direccion" class="form-label fw-semibold">
                 <i class="fas fa-map-marker-alt me-2 text-info"></i>Dirección
               </label>
-              <input type="text " class="form-control text-start" id="direccion" name="direccion" placeholder="Dirección" required>
+              <input type="text" class="form-control text-start" id="direccion" name="direccion" placeholder="Dirección" required>
             </div>
-            <!-- Teléfono -->
+            <!-- Campo Teléfono -->
             <div class="col-md-6 mb-3">
               <label for="telefono" class="form-label fw-semibold">
                 <i class="fas fa-phone me-2 text-info"></i>Teléfono
@@ -104,14 +93,14 @@
             </div>
           </div>
           <div class="row">
-            <!-- Email -->
+            <!-- Campo Email -->
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label fw-semibold">
                 <i class="fas fa-envelope me-2 text-info"></i>Email
               </label>
               <input type="email" class="form-control text-start" id="email" name="email" placeholder="Email" required>
             </div>
-            <!-- Confirmar Email -->
+            <!-- Campo Confirmar Email -->
             <div class="col-md-6 mb-3">
               <label for="confirmarEmail" class="form-label fw-semibold">
                 <i class="fas fa-envelope me-2 text-info"></i>Confirmar Email
@@ -119,14 +108,14 @@
               <input type="email" class="form-control text-start" id="confirmarEmail" name="confirmarEmail" placeholder="Confirma tu Email" required>
             </div>
           </div>
-          <!-- Comentarios -->
+          <!-- Campo Comentarios -->
           <div class="mb-3">
             <label for="comentarios" class="form-label fw-semibold">
               <i class="fas fa-comment-dots me-2 text-info"></i>Comentarios
             </label>
             <textarea class="form-control text-center" id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí" required></textarea>
           </div>
-          <!-- Botón para enviar el formulario -->
+          <!-- Botón Enviar -->
           <div class="text-center">
             <button type="submit" class="btn btn-info px-5 text-dark fw-bold">
               <i class="fas fa-paper-plane me-2"></i>Enviar
@@ -136,6 +125,10 @@
       </div>
     </section>
   </main>
+
+  <!-- =========================
+       VALIDACIÓN DE EMAILS
+  ========================== -->
   <script>
     function validarEmails() {
       var email = document.getElementById('email').value;
@@ -147,9 +140,10 @@
       return true;
     }
   </script>
-  <!-- ===========================
+
+  <!-- =========================
        PIE DE PÁGINA
-  ============================ -->
+  ========================== -->
   <footer class="bg-dark text-light pt-5 pb-3 mt-5">
     <div class="container-fluid">
       <div class="row d-flex align-items-start">
@@ -209,7 +203,6 @@
         </div>
       </div>
     </div>
-    
     <!-- Redes sociales y boletín -->
     <div class="container-fluid pt-4 mt-4">
       <div class="row">
@@ -245,7 +238,7 @@
         <div class="col-md-6">
           <section>
             <h2 class="h5 text-uppercase text-info mb-3">Suscríbete a nuestro boletín</h2>
-            <form  action="http://www.cursos-dise&#241;o.es/mostrar.php" method="post" class="row g-2 align-items-center">
+            <form action="http://www.cursos-dise&#241;o.es/mostrar.php" method="post" class="row g-2 align-items-center">
               <div class="col-8">
                 <label for="newsletter-email" class="visually-hidden">Tu email</label>
                 <input type="email" name="email" id="newsletter-email" class="form-control" placeholder="Tu email" required>

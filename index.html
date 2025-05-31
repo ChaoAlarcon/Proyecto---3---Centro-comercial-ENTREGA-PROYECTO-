@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Metadatos básicos -->
   <meta charset="UTF-8">
   <title>Plaza Río 2 - Inicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Favicon -->
+  <!-- Icono de la página -->
   <link rel="icon" type="image/png" href="Imágenes/icono.png">
-
-  <!-- Hojas de estilo principales -->
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Bootstrap CSS y dependencias de iconos -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/custom.css">
+  
+  
+  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <!-- Font Awesome para iconos adicionales -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Bootstrap JS (bundle con Popper) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -30,7 +26,7 @@
       <div class="container-fluid justify-content-center">
         <!-- Logo principal -->
         <a class="navbar-brand" href="index.html">
-          <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
+          <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo" >
         </a>
         <!-- Botón hamburguesa para móviles -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,67 +57,76 @@
     <section class="Vídeo d-flex justify-content-center mb-4">
       <video class="main-video rounded shadow" autoplay muted loop playsinline src="Vídeos\Centro Comercial Plaza Ro 2  Plaza Rio 2.mp4"></video>
     </section>
-    
+
     <!-- Espacio para futuros contenidos destacados -->
     <section class="d-flex justify-content-center mb-4"></section>
-    
+
     <!-- Presentación y bienvenida -->
     <section class="presentation-section py-5 text-center">
       <div class="Presentación container">
         <h2 class="título display-2 mb-4 fw-bold text-primary text-white">Bienvenido a Plaza Río 2</h2>
-        <a class="btn btn-outline-light btn-lg shadow-sm mx-2 my-1 align-items-lg-center text-center fs-5 px-4 py-2" href="#Carousel" style="font-size: 1.25rem;">
+        <a class="botón-título btn btn-outline-light btn-lg shadow-sm mx-2 my-1 align-items-lg-center text-center fs-5 px-4 py-2" href="#Carousel" style="font-size: 1.25rem;">
           Descúbrenos<br>
           <i class="bi bi-chevron-double-down" style="font-size: 1.5rem;"></i>
         </a>
       </div>
     </section>
 
-   
 
-  <!-- Botones rápidos de acceso -->
-  <section class="my-5">
-    <div class="container d-flex justify-content-center flex-wrap gap-3">
-    <button class="btn btn-outline-primary btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" onclick="location.href='tiendas.html'">
-      <i class="fas fa-store me-2"></i>Tiendas
-    </button>
-    <button class="btn btn-outline-success btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" onclick="location.href='restaurantes.html'">
-      <i class="fas fa-utensils me-2"></i>Restaurantes
-    </button>
-    <button class="btn btn-outline-info btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" onclick="location.href='noticias.html'">
-      <i class="fas fa-newspaper me-2"></i>Noticias
-    </button>
-    <button class="btn btn-outline-warning btn-xl shadow-sm mx-3 my-2 px-5 py-3 fs-4" data-bs-toggle="modal" data-bs-target="#aviso1">
-      <i class="fas fa-clock me-2"></i>Horarios
-    </button>
-    </div>
-  </section>
 
-    
+    <!-- Botones rápidos de acceso -->
+    <section class="my-5 botones">
+      <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+        <button class="btn btn-outline-primary btn-xl shadow-sm px-5 py-3 fs-4" onclick="location.href='tiendas.html'">
+          <i class="fas fa-store me-2"></i>Tiendas
+        </button>
+        </div>
+        <div class="col-auto">
+        <button class="btn btn-outline-success btn-xl shadow-sm px-5 py-3 fs-4" onclick="location.href='restaurantes.html'">
+          <i class="fas fa-utensils me-2"></i>Restaurantes
+        </button>
+        </div>
+        <div class="col-auto">
+        <button class="btn btn-outline-info btn-xl shadow-sm px-5 py-3 fs-4" onclick="location.href='noticias.html'">
+          <i class="fas fa-newspaper me-2"></i>Noticias
+        </button>
+        </div>
+        <div class="col-auto">
+        <button class="btn btn-outline-warning btn-xl shadow-sm px-5 py-3 fs-4" data-bs-toggle="modal" data-bs-target="#aviso1">
+          <i class="fas fa-clock me-2"></i>Horarios
+        </button>
+        </div>
+      </div>
+      </div>
+    </section>
 
     <!-- Información útil: horarios y cómo llegar -->
     <section class="Contenido py-4 bg-white border-top border-bottom">
-     <section class="texto-descripción">
-    <h2 class="Text-Presentación lead mb-0 text-center">
+      <!-- Descripción -->
+      <section class="texto-descripción">
+        <h2 class="Text-Presentación display-6  text-center">
           <i class="fas fa-map-marker-alt me-2"></i>
-          El centro comercial de referencia en Madrid. Descubre tiendas, restaurantes, ocio y mucho más en un entorno moderno y familiar.
+            El centro comercial de referencia en Madrid. Tiendas, restaurantes, ocio y servicios exclusivos para toda la familia.
         </h2>
-    </section>
+      </section>
+      <section class="texto-horario">
       <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
         <!-- Botón para ver horario de hoy -->
         <div class="mb-3 mb-md-0">
-          <button type="button" class="btn btn-primary btn-lg px-4 shadow" data-bs-toggle="modal" data-bs-target="#aviso1">
-            <i class="fas fa-bullhorn me-2"></i>Las tiendas estarán hoy abiertas hasta las 22:00
+          <button type="button" class="btn btn-primary px-4 py-2 fs-5 shadow" data-bs-toggle="modal" data-bs-target="#aviso1">
+        <i class="fas fa-bullhorn me-2"></i>Las tiendas estarán hoy abiertas hasta las 22:00
           </button>
         </div>
         <!-- Botón para ver cómo llegar -->
         <div>
-          <a href="visitanos.html" class="btn btn-outline-secondary btn-lg px-4 shadow">
-            <i class="fas fa-map-marker-alt me-2"></i>Cómo venir a visitarnos
+          <a href="visitanos.html" class="btn btn-outline-secondary px-4 py-2 fs-5 shadow">
+        <i class="fas fa-map-marker-alt me-2"></i>Cómo venir a visitarnos
           </a>
         </div>
       </div>
-
-      
+      </section>
 
       <!-- Modal de horarios -->
       <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
@@ -129,24 +134,24 @@
           <div class="modal-content">
             <!-- Encabezado del modal -->
             <div class="modal-header bg-primary text-white">
-              <h3 class="modal-title" id="aviso1Label"><i class="fas fa-clock me-2"></i>Horario</h3>
+              <h3 class="modal-title text-white" id="aviso1Label"><i class="fas fa-clock me-2"></i>Horario</h3>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <!-- Cuerpo del modal: información de horarios -->
             <div class="modal-body">
-              <h4 class="text-center mb-4"><i class="fas fa-question-circle me-2"></i>¿Cuándo venir a visitarnos?</h4>
+              <h4 class="text-center mb-4 card-title fw-bold"><i class="fas fa-question-circle me-2"></i>¿Cuándo venir a visitarnos?</h4>
               <section>
                 <div class="row">
                   <!-- Horario general -->
                   <div class="col-md-6 mb-3 mb-md-0">
                     <div class="card border-0 shadow-sm h-100">
                       <div class="card-body">
-                        <h5 class="card-title text-center text-primary">Horario del centro</h5>
+                        <h5 class=" text-center text-primary">Horario del centro</h5>
                         <div class="d-flex justify-content-center my-3">
                           <img src="Imágenes/reloj.svg" alt="Horario" class="img-fluid" style="max-width:60px;">
                         </div>
-                        <ol class="list-unstyled text-center mb-0">
-                          <li>Lunes a Domingo: <strong>10:00 a 22:00</strong></li>
+                        <ol class=" card-text list-unstyled text-center mb-0">
+                          <li class=" card-text">Lunes a Domingo: <strong>10:00 a 22:00</strong></li>
                         </ol>
                       </div>
                     </div>
@@ -155,10 +160,10 @@
                   <div class="col-md-6">
                     <div class="card border-0 shadow-sm h-100 bg-light">
                       <div class="card-body">
-                        <h5 class="card-title text-center text-danger">
+                        <h5 class=" text-center text-danger">
                           <i class="fas fa-star me-2"></i>Aperturas Festivos
                         </h5>
-                        <p class="card-text text-justify mb-0">
+                        <p class="card-text text-start mb-0">
                           <strong>Domingos y festivos de apertura:</strong><br>
                           Abrimos todos los domingos y festivos excepto el 25 de diciembre, 1 y 6 de enero y 1 de mayo (abierta zona de restauración).
                         </p>
@@ -168,15 +173,7 @@
                 </div>
               </section>
             </div>
-            <!-- Pie del modal -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                <i class="fas fa-times me-1"></i>Cerrar
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+           
     </section>
 
     <!-- Carrusel de imágenes del centro comercial -->
@@ -187,8 +184,8 @@
           <div class="carousel-item active">
             <img src="Imágenes/plazario2edificio.jpeg" class="d-block w-100">
             <div class="carousel-caption d-none d-md-block">
-              <h5><i class="fas fa-university me-2"></i>¡Adéntrate en la aventura!</h5>
-              <p><i class="fas fa-info-circle me-1"></i>Descripción del edificio</p>
+              <h5>¡Adéntrate en la aventura!</h5>
+              <p><i class="bi bi-binoculars-fill"></i> Vistas desde el parque Manzanares</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -287,7 +284,6 @@
         </div>
       </div>
     </div>
-    
     <!-- Redes sociales y boletín -->
     <div class="container-fluid pt-4 mt-4">
       <div class="row">

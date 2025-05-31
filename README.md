@@ -39,7 +39,11 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 ## 📸 Vista previa
 
-[Échale un vistazo!](https://www.linkedin.com/posts/chao-alarc%C3%B3n_desarrolloweb-html5-css3-activity-7329267896117809153-zzc0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_BcLQBcRZ71RtNDnnh4Qoo--IkG05oJ3U)
+[Échale un vistazo!](https://plazario2.netlify.app/)
+
+## 🎨 Paleta de Colores utilizada
+
+<img src="AdobeColor-Plaza Río 2.jpeg" alt="Paleta de colores" height="350px">
 
 
 
@@ -47,16 +51,8 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
-#### -Ajustar paleta de colores de la página
 
 
-
-
-
-
-
-
-#### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
 
 

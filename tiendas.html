@@ -3,73 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>Tiendas</title>
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scss/custom.css">
+  <!-- Icono de la página -->
   <link rel="icon" type="image/png" href="Imágenes/icono.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap 5.3.3 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Iconos externos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <!-- Font Awesome 6 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Bootstrap 5.3.5 CSS and JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  <!-- ===========================
+       CABECERA Y NAVBAR
+  ============================ -->
   <header>
-   <!-- Navbar responsivo -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid justify-content-center">
-      <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
-      </a>
-      <!-- Botón hamburguesa para móviles -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item">
-            <a class="nav-link" href="tiendas.html">Tiendas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="restaurantes.html">Restaurantes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ocio.html">Ocio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cine.html">Cine</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plano-centro.html">Plano del Centro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="visitanos.html">Visítanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="avisolegal.html">Aviso Legal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid justify-content-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="Imágenes/PlazaRio2-Logo.png" alt="Logo Plaza Río 2" class="logo">
+        </a>
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+            <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restaurantes</a></li>
+            <li class="nav-item"><a class="nav-link" href="ocio.html">Ocio</a></li>
+            <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
+            <li class="nav-item"><a class="nav-link" href="plano-centro.html">Plano del Centro</a></li>
+            <li class="nav-item"><a class="nav-link" href="visitanos.html">Visítanos</a></li>
+            <li class="nav-item"><a class="nav-link" href="avisolegal.html">Aviso Legal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </header>
+
+  <!-- ===========================
+       CONTENIDO PRINCIPAL
+  ============================ -->
   <main>
     <section class="container py-5">
-      <h1 class="mb-5 text-center fw-bold text-primary">
-        Tiendas
-      </h1>
+      <h1 class="mb-5 text-center fw-bold text-primary">Tiendas</h1>
       <div class="row g-4 justify-content-center">
+
+        <!-- ========== MODALES Y CARDS DE TIENDAS ========== -->
+
         <!-- Modal 4Dreams -->
         <div class="modal fade" id="modal4Dreams" tabindex="-1" aria-labelledby="modal4DreamsLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modal4DreamsLabel">4Dreams</h5>
+                <h5 class="modal-title fw-bold" id="modal4DreamsLabel">4Dreams</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -79,7 +72,7 @@
                   </div>
                   <div class="col-md-6">
                     <p>4Dreams es una tienda especializada en productos para el hogar y decoración. Ofrecen una amplia gama de artículos que combinan funcionalidad y diseño, ideales para transformar cualquier espacio en un lugar acogedor y único. Desde muebles hasta pequeños detalles decorativos, 4Dreams tiene todo lo que necesitas para hacer realidad tus sueños de diseño interior.</p>
-                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
               </div>
@@ -89,19 +82,17 @@
             </div>
           </div>
         </div>
-        <!-- 4Dreams Card -->
+        <!-- Card 4Dreams -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal4Dreams">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">4Dreams</h2>
             </div>
             <img src="Imágenes/Tiendas/4dreams.png" class="card-img-top p-2 rounded-4" alt="4Dreams" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modal4Dreams">
-                Más información
-              </button>
+             
             </div>
-          </article>
+            </article>
         </div>
 
         <!-- Modal Adidas -->
@@ -109,7 +100,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modalAdidasLabel">Adidas</h5>
+                <h5 class="modal-title fw-bold" id="modalAdidasLabel">Adidas</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -119,6 +110,7 @@
                   </div>
                   <div class="col-md-6">
                     <p>Adidas es una marca líder mundial en ropa y accesorios deportivos. Con una larga trayectoria en innovación y diseño, ofrece productos de alta calidad para deportistas y amantes del deporte. Desde zapatillas de running hasta ropa casual con estilo, Adidas combina rendimiento y moda para ayudarte a alcanzar tus metas.</p>
+                    
                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
@@ -129,17 +121,15 @@
             </div>
           </div>
         </div>
-        <!-- Adidas Card -->
+        <!-- Card Adidas -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAdidas">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">Adidas</h2>
             </div>
             <img src="Imágenes/Tiendas/adidas.png" class="card-img-top p-2 rounded-4" alt="Adidas" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAdidas">
-                Más información
-              </button>
+             
             </div>
           </article>
         </div>
@@ -149,7 +139,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modalAlainAfflelouLabel">Alain Afflelou</h5>
+                <h5 class="modal-title fw-bold" id="modalAlainAfflelouLabel">Alain Afflelou</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -158,8 +148,9 @@
                     <img src="Imágenes/Tiendas/Local/alainafflelou.jpeg" class="img-fluid rounded shadow" alt="Tienda Alain Afflelou">
                   </div>
                   <div class="col-md-6">
-                    <p>Alain Afflelou es una óptica reconocida por su compromiso con la salud visual y el diseño innovador. Ofrecen una amplia variedad de gafas graduadas, lentes de contacto y gafas de sol, adaptadas a las necesidades de cada cliente. Con tecnología avanzada y un enfoque en la moda, Alain Afflelou garantiza calidad y estilo en cada producto.</p>
-                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                   <p>Alain Afflelou es una óptica reconocida por su compromiso con la salud visual y el diseño innovador. Ofrecen una amplia variedad de gafas graduadas, lentes de contacto y gafas de sol, adaptadas a las necesidades de cada cliente. Con tecnología avanzada y un enfoque en la moda, Alain Afflelou garantiza calidad y estilo en cada producto.</p>
+                     
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
               </div>
@@ -169,17 +160,15 @@
             </div>
           </div>
         </div>
-        <!-- Alain Afflelou Card -->
+        <!-- Card Alain Afflelou -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAlainAfflelou">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">Alain Afflelou</h2>
             </div>
             <img src="Imágenes/Tiendas/alainafflelou.png" class="card-img-top p-2 rounded-4" alt="Alain Afflelou" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAlainAfflelou">
-                Más información
-              </button>
+              
             </div>
           </article>
         </div>
@@ -189,7 +178,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modalAlcampoCityLabel">Alcampo City</h5>
+                <h5 class="modal-title fw-bold" id="modalAlcampoCityLabel">Alcampo City</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -199,7 +188,8 @@
                   </div>
                   <div class="col-md-6">
                     <p>Alcampo City es un supermercado que ofrece una amplia variedad de productos de alta calidad a precios competitivos. Desde alimentos frescos y productos de limpieza hasta artículos para el hogar, Alcampo City se esfuerza por satisfacer las necesidades diarias de sus clientes con un excelente servicio y promociones constantes.</p>
-                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                     
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
               </div>
@@ -209,17 +199,15 @@
             </div>
           </div>
         </div>
-        <!-- Alcampo City Card -->
+        <!-- Card Alcampo City -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAlcampoCity">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">Alcampo City</h2>
             </div>
             <img src="Imágenes/Tiendas/alcampo.png" class="card-img-top p-2 rounded-4" alt="Alcampo City" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAlcampoCity">
-                Más información
-              </button>
+              
             </div>
           </article>
         </div>
@@ -229,7 +217,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modalAleHopLabel">Ale-Hop</h5>
+                <h5 class="modal-title fw-bold" id="modalAleHopLabel">Ale-Hop</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -238,8 +226,9 @@
                     <img src="Imágenes/Tiendas/Local/alehop.jpeg" class="img-fluid rounded shadow" alt="Tienda Ale-Hop">
                   </div>
                   <div class="col-md-6">
-                    <p>Ale-Hop es una tienda conocida por su amplia selección de regalos y accesorios originales. Desde artículos de papelería y decoración hasta gadgets divertidos, Ale-Hop ofrece productos únicos y asequibles que son perfectos para cualquier ocasión. Su ambiente alegre y creativo hace que cada visita sea una experiencia divertida.</p>
-                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                     <p>Ale-Hop es una tienda conocida por su amplia selección de regalos y accesorios originales. Desde artículos de papelería y decoración hasta gadgets divertidos, Ale-Hop ofrece productos únicos y asequibles que son perfectos para cualquier ocasión. Su ambiente alegre y creativo hace que cada visita sea una experiencia divertida.</p>
+                     
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
               </div>
@@ -249,17 +238,15 @@
             </div>
           </div>
         </div>
-        <!-- Ale-Hop Card -->
+        <!-- Card Ale-Hop -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAleHop">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">Ale-Hop</h2>
             </div>
             <img src="Imágenes/Tiendas/alehop.png" class="card-img-top p-2 rounded-4" alt="Ale-Hop" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAleHop">
-                Más información
-              </button>
+              
             </div>
           </article>
         </div>
@@ -269,7 +256,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modalAliExpressLabel">AliExpress</h5>
+                <h5 class="modal-title fw-bold" id="modalAliExpressLabel">AliExpress</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -279,7 +266,8 @@
                   </div>
                   <div class="col-md-6">
                     <p>AliExpress es una plataforma global de comercio electrónico que ofrece una amplia variedad de productos a precios competitivos. Desde electrónica y moda hasta artículos para el hogar y accesorios, AliExpress conecta a millones de compradores con vendedores de todo el mundo. Su compromiso con la accesibilidad y la diversidad de productos lo convierte en un destino ideal para encontrar todo lo que necesitas en un solo lugar.</p>
-                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                    
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
               </div>
@@ -289,17 +277,15 @@
             </div>
           </div>
         </div>
-        <!-- AliExpress Card -->
+        <!-- Card AliExpress -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAliExpress">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">AliExpress</h2>
             </div>
             <img src="Imágenes/Tiendas/aliexpress.png" class="card-img-top p-2 rounded-4" alt="AliExpress" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAliExpress">
-                Más información
-              </button>
+              
             </div>
           </article>
         </div>
@@ -309,7 +295,7 @@
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="modalArmaniExchangeLabel">Armani Exchange</h5>
+                <h5 class="modal-title fw-bold" id="modalArmaniExchangeLabel">Armani Exchange</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
               <div class="modal-body">
@@ -319,7 +305,8 @@
                   </div>
                   <div class="col-md-6">
                     <p>Armani Exchange es la línea más joven y urbana de la reconocida casa de moda italiana Armani. Ofrece ropa, accesorios y calzado con un estilo moderno, sofisticado y accesible, dirigido a un público dinámico que busca las últimas tendencias en moda internacional.</p>
-                     <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                     
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
                   </div>
                 </div>
               </div>
@@ -329,62 +316,63 @@
             </div>
           </div>
         </div>
-        <!-- Armani Exchange Card -->
+        <!-- Card Armani Exchange -->
         <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalArmaniExchange">
             <div class="card-body pb-2 text-center">
               <h2 class="h6 card-title mb-2 fw-bold">Armani Exchange</h2>
             </div>
             <img src="Imágenes/Tiendas/armaniexchange.png" class="card-img-top p-2 rounded-4" alt="Armani Exchange" style="height: 120px; object-fit: contain;">
             <div class="card-footer bg-white border-0 text-center pt-2">
-              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalArmaniExchange">
-                Más información
-              </button>
+              
             </div>
           </article>
         </div>
 
-      <!-- Modal Aromas Artesanales -->
-      <div class="modal fade" id="modalAromasArtesanales" tabindex="-1" aria-labelledby="modalAromasArtesanalesLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-header border-0">
-              <h5 class="modal-title" id="modalAromasArtesanalesLabel">Aromas Artesanales</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </div>
-            <div class="modal-body">
-              <div class="row align-items-center">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <img src="Imágenes/Tiendas/Local/aromasartesanales.jpeg" class="img-fluid rounded shadow" alt="Tienda Aromas Artesanales">
-                </div>
-                <div class="col-md-6">
-                  <p>Aromas Artesanales es una tienda especializada en fragancias y productos aromáticos hechos a mano. Descubre velas, inciensos, aceites esenciales y ambientadores únicos, elaborados con ingredientes naturales para crear ambientes acogedores y personalizados en tu hogar o espacio de trabajo.</p>
-                   <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+        <!-- Modal Aromas Artesanales -->
+        <div class="modal fade" id="modalAromasArtesanales" tabindex="-1" aria-labelledby="modalAromasArtesanalesLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="modalAromasArtesanalesLabel">Aromas Artesanales</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Tiendas/Local/aromasartesanales.jpeg" class="img-fluid rounded shadow" alt="Tienda Aromas Artesanales">
+                  </div>
+                  <div class="col-md-6">
+                     <p>Aromas Artesanales es una tienda especializada en fragancias y productos aromáticos hechos a mano. Descubre velas, inciensos, aceites esenciales y ambientadores únicos, elaborados con ingredientes naturales para crear ambientes acogedores y personalizados en tu hogar o espacio de trabajo.</p>
+                  
+                    <a href="plano-centro.html" target="_blank" class="btn btn-outline-primary w-100 mt-2">Ver en el plano</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer border-0">
-              <a href="https://aromasartesanales.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              <div class="modal-footer border-0">
+                <a href="https://aromasartesanales.com" target="_blank" class="btn btn-primary w-100">Visitar web</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Aromas Artesanales Card -->
-      <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-        <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
-          <div class="card-body pb-2 text-center">
-            <h2 class="h6 card-title mb-2 fw-bold">Aromas Artesanales</h2>
-          </div>
-          <img src="Imágenes/Tiendas/aromasartesanales.png" class="card-img-top p-2 rounded-4" alt="Aromas Artesanales" style="height: 120px; object-fit: contain;">
-          <div class="card-footer bg-white border-0 text-center pt-2">
-            <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalAromasArtesanales">
-              Más información
-            </button>
-          </div>
-        </article>
+        <!-- Card Aromas Artesanales -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow" style="width: 15rem; min-width: 200px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalAromasArtesanales">
+            <div class="card-body pb-2 text-center">
+              <h2 class="h6 card-title mb-2 fw-bold">Aromas Artesanales</h2>
+            </div>
+            <img src="Imágenes/Tiendas/aromasartesanales.png" class="card-img-top p-2 rounded-4" alt="Aromas Artesanales" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              
+            </div>
+          </article>
+        </div>
+        <!-- ========== FIN MODALES Y CARDS ========== -->
+
       </div>
     </section>
   </main>
+
   <!-- ===========================
        PIE DE PÁGINA
   ============================ -->
@@ -447,7 +435,6 @@
         </div>
       </div>
     </div>
-    
     <!-- Redes sociales y boletín -->
     <div class="container-fluid pt-4 mt-4">
       <div class="row">

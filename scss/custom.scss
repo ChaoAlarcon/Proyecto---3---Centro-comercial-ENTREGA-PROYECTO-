@@ -1,0 +1,30 @@
+/* 2. Paleta de colores */
+/* Color Theme Swatches in Hex */
+.Plaza-Río-2-1-hex { color: #4B89BF; }
+.Plaza-Río-2-2-hex { color: #96B9D9; }
+.Plaza-Río-2-3-hex { color: #F2D9BB; }
+.Plaza-Río-2-4-hex { color: #F28444; }
+.Plaza-Río-2-5-hex { color: #A69C98; }
+/* Color Theme Swatches in RGBA */
+.Plaza-Río-2-1-rgba { color: rgba(75, 137, 191, 1); }
+.Plaza-Río-2-2-rgba { color: rgba(150, 185, 217, 1); }
+.Plaza-Río-2-3-rgba { color: rgba(242, 217, 187, 1); }
+.Plaza-Río-2-4-rgba { color: rgba(242, 132, 68, 1); }
+.Plaza-Río-2-5-rgba { color: rgba(166, 156, 152, 1); }
+/* Color Theme Swatches in HSLA */
+.Plaza-Río-2-1-hsla { color: hsla(207, 47, 52, 1); }
+.Plaza-Río-2-2-hsla { color: hsla(208, 46, 71, 1); }
+.Plaza-Río-2-3-hsla { color: hsla(32, 67, 84, 1); }
+.Plaza-Río-2-4-hsla { color: hsla(22, 86, 60, 1); }
+.Plaza-Río-2-5-hsla { color: hsla(17, 7, 62, 1); }
+
+$primary: #4B89BF;       
+$secondary: #A69C98;     
+$success: #F28444;       
+$info: #96B9D9;          
+$warning: #cc9900;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
