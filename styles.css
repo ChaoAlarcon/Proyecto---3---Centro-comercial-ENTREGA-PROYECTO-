@@ -128,6 +128,23 @@ section {
      font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
      font-weight: 400;
      font-size: 0.9rem;
+     gap: 40px; /* Aumenta la separación entre botones */
+}
+
+@media (max-width: 1024px) {
+     .botones {
+          flex-direction: column;
+          gap: 64px; /* Más separación vertical en pantallas medianas */
+          margin-top: -400px;
+     }
+}
+
+@media (max-width: 768px) {
+     .botones {
+          flex-direction: column;
+          gap: 80px; /* Aumenta aún más la separación en pantallas pequeñas */
+          margin-top: -400px;
+     }
 }
 
 .Presentación {
