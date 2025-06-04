@@ -5,7 +5,7 @@
 
 **Proyecto grupal desarrollado en el Instituto Nebrija de Formación Profesional**  
 **Autores:** Chao An Alarcón Chen, Álvaro Santos Calvo, Nicolás García-Sampedro Docampo  
-📅 Abril 2025 - Actualidad
+📅 Abril 2025 - Junio 2025
 
 
 
